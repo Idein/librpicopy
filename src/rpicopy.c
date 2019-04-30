@@ -1,11 +1,13 @@
 /*
- * Copyright (c) 2019 Sugizaki Yukimasa (ysugi@idein.jp)
+ * Copyright (c) 2019 Idein Inc. (info@idein.jp)
  * All rights reserved.
+ * Author: Sugizaki Yukimasa (ysugi@idein.jp)
  *
  * This software is licensed under a Modified (3-Clause) BSD License.
  * You should have received a copy of this license along with this
  * software. If not, contact the copyright holder above.
  */
+
 
 #include "local.h"
 #include "rpicopy.h"
