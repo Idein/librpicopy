@@ -261,10 +261,18 @@ uint32_t memset_dma_config(const uint32_t dst_addr, const int c,
 uint32_t memcpy_dma(const uint32_t dst_addr, const uint32_t src_addr,
         const size_t size)
 {
-    return memcpy_dma_config(dst_addr, src_addr, size, 4, 1);
+    /*
+     * 4,1: pi1
+     * 6,1: pi2, pi3, pi3+
+     */
+    return memcpy_dma_config(dst_addr, src_addr, size, 5, 1);
 }
 
 uint32_t memset_dma(const uint32_t dst_addr, const int c, const size_t size)
 {
-    return memset_dma_config(dst_addr, c, size, 3, 1);
+    /*
+     * 5,1: pi3, pi3+
+     * 6,1: pi1, pi2
+     */
+    return memset_dma_config(dst_addr, c, size, 5, 1);
 }
