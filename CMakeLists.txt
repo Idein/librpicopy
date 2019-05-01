@@ -12,7 +12,7 @@ set(CPACK_PACKAGE_DESCRIPTION_SUMMARY
 # See https://semver.org/ .
 set(CPACK_PACKAGE_VERSION_MAJOR 0)
 set(CPACK_PACKAGE_VERSION_MINOR 1)
-set(CPACK_PACKAGE_VERSION_PATCH 0)
+set(CPACK_PACKAGE_VERSION_PATCH 1)
 
 # CMAKE_INSTALL_PREFIX and CPACK_PACKAGING_INSTALL_PREFIX must be identical
 # because the install prefix is used in the pkg-config file which will be
