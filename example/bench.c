@@ -119,6 +119,7 @@ int main(void)
     do_bench(2, 1, test_memcpy);
     do_bench(3, 1, test_memcpy);
     do_bench(4, 1, test_memcpy);
+    do_bench(5, 1, test_memcpy);
 
     printf("# DMA memset\n");
     do_bench(1, 1, test_memset);
@@ -127,6 +128,7 @@ int main(void)
     do_bench(2, 1, test_memset);
     do_bench(3, 1, test_memset);
     do_bench(4, 1, test_memset);
+    do_bench(5, 1, test_memset);
 
     if (rpimemmgr_free_by_usraddr(dst, &st))
         printf_abort("rpimemmgr_free_by_usraddr\n");
